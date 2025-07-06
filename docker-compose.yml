@@ -1,0 +1,12 @@
+
+version: '3.8'
+
+services:
+  student-api:
+    build:
+      context: ./student-performance-api
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./student-performance-api:/app
+    restart: unless-stopped

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Previsão de Nota G3</title>
+    <style>
+        body { font-family: Arial; padding: 20px; max-width: 600px; margin: auto; }
+        label, input, select { display: block; margin-bottom: 10px; width: 100%; }
+        button { padding: 10px; background-color: #007BFF; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #0056b3; }
+        .resultado { margin-top: 20px; font-size: 1.2em; }
+    </style>
+</head>
+<body>
+    <h1>Previsão de Nota Final (G3)</h1>
+    <form id="predict-form">
+        <label for="school">Escola:</label>
+        <select id="school" name="school">
+            <option value="GP">GP</option>
+            <option value="MS">MS</option>
+        </select>
+
+        <label for="sex">Sexo:</label>
+        <select id="sex" name="sex">
+            <option value="F">Feminino</option>
+            <option value="M">Masculino</option>
+        </select>
+
+        <label for="age">Idade:</label>
+        <input type="number" id="age" name="age" value="18" required>
+
+        <label for="G1">Nota G1:</label>
+        <input type="number" id="G1" name="G1" value="10" required>
+
+        <label for="G2">Nota G2:</label>
+        <input type="number" id="G2" name="G2" value="12" required>
+
+        <label for="subject">Disciplina:</label>
+        <select id="subject" name="subject">
+            <option value="mat">Matemática</option>
+            <option value="por">Português</option>
+        </select>
+
+        <button type="submit">Prever Nota</button>
+    </form>
+
+    <div class="resultado" id="resultado"></div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
