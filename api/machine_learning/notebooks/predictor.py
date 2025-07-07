@@ -1,10 +1,8 @@
-# api/machine_learning/predictor.py
-
 import joblib
 import pandas as pd
 from pathlib import Path
 
-MODEL_DIR = Path("api/machine_learning/models")
+MODEL_DIR = Path("C:/Users/Carolina Barroco/Documents/GitHub/Projeto_MVP_QualidadeSoftware/api/machine_learning/notebooks/api/machine_learning/models")
 model = joblib.load(MODEL_DIR / "model.pkl")
 scaler = joblib.load(MODEL_DIR / "scaler.pkl")
 

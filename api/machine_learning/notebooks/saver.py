@@ -1,5 +1,3 @@
-# api/machine_learning/saver.py
-
 import joblib
 import os
 
